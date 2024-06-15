@@ -42,7 +42,7 @@ public class TodoController {
         repo.save(todo);
         return todo;
     }
-
+   
     @DeleteMapping(path="/todo/{id}/remove")
     public String TodoDeleteView(@PathVariable("id") long id){
         Todo t=repo.getReferenceById(id);
